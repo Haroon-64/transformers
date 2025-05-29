@@ -85,6 +85,7 @@ print(f"Most likely label: {most_likely_label} with probability: {probs[0][most_
 ## Notes
 
 - Use [`CLIPImageProcessor`] to resize (or rescale) and normalizes images for the model.
+- By default CLIP uses BICUBIC interpolation per the official [repo](https://github.com/openai/CLIP/blob/dcba3cb2e2827b402d2701e7e1c7d9fed8a20ef1/clip/clip.py#L81)
 
 ## CLIPConfig
 
