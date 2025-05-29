@@ -56,6 +56,10 @@ A list of official Hugging Face and community (indicated by 🌎) resources to h
 
 If you're interested in submitting a resource to be included here, please feel free to open a Pull Request and we'll review it! The resource should ideally demonstrate something new instead of duplicating an existing resource.
 
+## Notes
+
+- ConvNeXT uses BICUBIC interpolation by default and as per [original repo](https://github.com/facebookresearch/ConvNeXt/blob/048efcea897d999aed302f2639b6270aedf8d4c8/datasets.py#L90).
+
 ## ConvNextConfig
 
 [[autodoc]] ConvNextConfig

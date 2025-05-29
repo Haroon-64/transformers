@@ -93,7 +93,7 @@ class ConvNextImageProcessor(BaseImageProcessor):
         do_resize: bool = True,
         size: Optional[Dict[str, int]] = None,
         crop_pct: Optional[float] = None,
-        resample: PILImageResampling = PILImageResampling.BILINEAR,
+        resample: PILImageResampling = PILImageResampling.BICUBIC,
         do_rescale: bool = True,
         rescale_factor: Union[int, float] = 1 / 255,
         do_normalize: bool = True,
