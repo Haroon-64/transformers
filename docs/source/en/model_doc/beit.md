@@ -49,10 +49,6 @@ significantly outperforming from-scratch DeiT training (81.8%) with the same set
 This model was contributed by [nielsr](https://huggingface.co/nielsr). The JAX/FLAX version of this model was
 contributed by [kamalkraj](https://huggingface.co/kamalkraj). The original code can be found [here](https://github.com/microsoft/unilm/tree/master/beit).
 
-## Image Processing
-
-BEiT uses RandomResizedCrop and BILINEAR interpolation by default as per the official [repo](https://github.com/microsoft/unilm/blob/c837c5073154f8c61d6c1929bcc4accc57b0f2c2/beit/transforms.py#L82)
-
 ## Usage tips
 
 - BEiT models are regular Vision Transformers, but pre-trained in a self-supervised way rather than supervised. They
@@ -132,6 +128,10 @@ A list of official Hugging Face and community (indicated by 🌎) resources to h
 - [Semantic segmentation task guide](../tasks/semantic_segmentation)
 
 If you're interested in submitting a resource to be included here, please feel free to open a Pull Request and we'll review it! The resource should ideally demonstrate something new instead of duplicating an existing resource.
+
+## Notes
+
+- BEiT uses RandomResizedCrop and BILINEAR interpolation by default as per the official [repo](https://github.com/microsoft/unilm/blob/c837c5073154f8c61d6c1929bcc4accc57b0f2c2/beit/transforms.py#L82)
 
 ## BEiT specific outputs
 
