@@ -58,6 +58,12 @@ A list of official Hugging Face and community (indicated by 🌎) resources to h
 
 If you're interested in submitting a resource to be included here, please feel free to open a Pull Request and we'll review it! The resource should ideally demonstrate something new instead of duplicating an existing resource.
 
+## Notes
+
+- Across all the experimaents, the interpoaltion used in CvT is bicubic as per the experiments in the official [repo](https://github.com/microsoft/CvT/tree/f851e681966390779b71380d2600b52360ff4fe1/experiments/imagenet/cvt)
+- Trasnformers uses [AutoImageProcessor](https://github.com/huggingface/transformers/blob/1a25fd2f6de6ebde6a957d01d3b7437e917f9cb3/src/transformers/models/auto/image_processing_auto.py#L73) for CvT models which maps to ConvNextImageProcessor, and that uses bilinear interpolation [source](https://github.com/huggingface/transformers/blob/1a25fd2f6de6ebde6a957d01d3b7437e917f9cb3/src/transformers/models/convnext/image_processing_convnext.py#L96)
+- Interpolation is listed as bicubic to match the official implementation. Current code may still use bilinear pending update.
+
 ## CvtConfig
 
 [[autodoc]] CvtConfig
