@@ -118,6 +118,11 @@ Besides that:
 
 If you're interested in submitting a resource to be included here, please feel free to open a Pull Request and we'll review it! The resource should ideally demonstrate something new instead of duplicating an existing resource.
 
+
+## Notes
+
+- DeiT Uses Bicubic interpolation as per the [offical repo](https://github.com/facebookresearch/deit/blob/7e160fe43f0252d17191b71cbb5826254114ea5b/augment.py#L96)
+
 ## DeiTConfig
 
 [[autodoc]] DeiTConfig
