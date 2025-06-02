@@ -122,6 +122,10 @@ A list of official Hugging Face and community (indicated by 🌎) resources to h
 
 If you're interested in submitting a resource to be included here, please feel free to open a Pull Request and we'll review it! The resource should ideally demonstrate something new instead of duplicating an existing resource.
 
+## Notes
+
+- Data2Vec-vision officialy uses Bicubic interpolation per [official repo](https://github.com/facebookresearch/fairseq/blob/ecbf110e1eb43861214b05fa001eff584954f65a/examples/data2vec/tasks/image_classification.py#L66), but Transformer uses AutoImageProcessor which [maps to BEiT's image processor](https://github.com/huggingface/transformers/blob/1a25fd2f6de6ebde6a957d01d3b7437e917f9cb3/src/transformers/models/auto/image_processing_auto.py#L74) which has been updated to use Bilinear interpolation according to it's [official repo](https://github.com/microsoft/unilm/blob/c837c5073154f8c61d6c1929bcc4accc57b0f2c2/beit/transforms.py#L82)
+
 ## Data2VecTextConfig
 
 [[autodoc]] Data2VecTextConfig
